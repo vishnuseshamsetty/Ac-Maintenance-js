@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Maintenance</title>
+    <link rel="stylesheet" href="ac.css">
+</head>
+<body>
+    <form onsubmit="btnclick(event)">
+        <div>
+            <h1 id="head" >AC Maintenance Service</h1>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><p>Customer <br>Name</p></td>
+                    <td><input type="text" placeholder="Enter your name"> </td>
+                </tr>
+                <tr>
+                    <td><p>Mobile <br> Number</p></td>
+                    <td><input type="text" placeholder="Enter your number"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="" id="" cols="20" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>AC Type</td>
+                    <td>
+                        <select>
+                            <option>Window</option>
+                            <option>Split</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Service <br> Type</p></td>
+                    <td>
+                        <input type="checkbox" id="cleaning" value="500">Cleaning
+                        <input type="checkbox" id="repair" value="500">Repair<br>
+                        <input type="checkbox" id="gas" value="600">Gas Refill
+                        <input type="checkbox" id="relocation" value="800">Relocation <br>
+                        <input type="checkbox" id="filter" value="500">Filter
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>Date for <br> Appointment</p> </td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><p>Yearly <br>Maintenance</p></td>
+                    <td><input type="checkbox" id="maintenance" value="500">Select if required</td>
+                </tr>
+                <tr>
+                    <td><input type="submit"/></td>
+                    <td><input type="reset"/></td>
+                </tr>
+                <tr>
+                    <td id="result"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    <script src="ac.js"></script>
+</body>
+</html>
